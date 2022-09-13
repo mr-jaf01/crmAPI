@@ -29,7 +29,7 @@ class Server {
     this.includeRoutes();
     this.errorConfig()
     const port = 4000;
-    this.http.listen(port, () => {
+    this.app.listen(port, () => {
       console.log(`Listening on http://localhost:${port}`);
     });
   }
