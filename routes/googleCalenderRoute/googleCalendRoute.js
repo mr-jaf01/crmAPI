@@ -9,6 +9,7 @@ class calenderRoutes {
   /* creating app Routes starts */
   appRoutes() {
     this.app.post('/api/create-calender', CalenderRouteHandler.createCalender); 
+    this.app.get('/', CalenderRouteHandler.index); 
   }
 
   routesConfig() {
