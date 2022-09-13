@@ -1,4 +1,4 @@
-const CalenderRouteHandler = require('../../controllers/googlecalender/googleHandler/route-handler');
+const CalenderRouteHandler = require('../../controller/googleCalender/google-Handler/route-Handler');
 
 
 class calenderRoutes {
