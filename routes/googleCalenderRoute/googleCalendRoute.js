@@ -1,0 +1,18 @@
+const CalenderRouteHandler = require('../../controllers/googlecalender/googleHandler/route-handler');
+
+
+class calenderRoutes {
+  constructor(app) {
+    this.app = app;
+  }
+
+  /* creating app Routes starts */
+  appRoutes() {
+    this.app.post('/api/create-calender', CalenderRouteHandler.createCalender); 
+  }
+
+  routesConfig() {
+    this.appRoutes();
+  }
+}
+module.exports = calenderRoutes;
