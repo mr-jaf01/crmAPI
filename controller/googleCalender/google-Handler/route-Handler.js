@@ -26,7 +26,6 @@ class CalenderRouteHandler {
 }
 
 async index(request, response,next) {
-
     response.send({message:"it works"})
 }
 
