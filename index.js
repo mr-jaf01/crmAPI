@@ -28,7 +28,7 @@ class Server {
     this.appConfig();
     this.includeRoutes();
     this.errorConfig()
-    const port = 4000;
+    const port =process.env.PORT || 4000
     this.app.listen(port, () => {
       console.log(`Listening on http://localhost:${port}`);
     });
