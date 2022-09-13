@@ -28,7 +28,7 @@ class Server {
     this.appConfig();
     this.includeRoutes();
     this.errorConfig()
-    const port = process.env.NODE_SERVER_POST || 4000;
+    const port = 4000;
     this.http.listen(port, () => {
       console.log(`Listening on http://localhost:${port}`);
     });
